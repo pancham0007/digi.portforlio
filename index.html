@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pancham Portfolio</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+    scroll-behavior: smooth;
+  }
+
+  .glass {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .glow {
+    box-shadow: 0 0 20px rgba(0,255,200,0.15);
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 glass px-6 py-4 flex justify-between items-center">
+  <h1 class="text-lg font-bold">Pancham</h1>
+  <div class="space-x-6 text-sm">
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="h-screen flex items-center justify-between px-10 pt-20">
+  <div class="max-w-xl fade-in">
+    <h1 class="text-5xl font-bold">Pancham Mahendrakumar Asodiya</h1>
+    <p class="text-cyan-400 mt-3">Aspiring Civil Engineer | Sustainable Design Enthusiast</p>
+    <p class="mt-4 text-gray-300">
+      A passionate Civil Engineering student focused on designing efficient, safe, and sustainable infrastructure systems.
+      Combining analytical thinking, technical expertise, and practical exposure to solve real-world challenges.
+    </p>
+
+    <div class="mt-6 space-x-4">
+      <button class="px-4 py-2 bg-cyan-500 rounded">View Projects</button>
+      <button class="px-4 py-2 border border-white rounded">Contact Me</button>
+    </div>
+  </div>
+
+  <div class="w-64 h-64 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 glow"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="px-10 py-20">
+  <h2 class="text-3xl font-bold mb-6">About / Learning Philosophy</h2>
+
+  <div class="grid gap-6">
+    <div class="glass p-6 rounded-xl">
+      <h3 class="text-cyan-400">Learning Philosophy</h3>
+      <ul class="mt-3 space-y-2">
+        <li>Continuous Learning</li>
+        <li>Goal-Oriented Approach</li>
+        <li>Innovation & Problem Solving</li>
+      </ul>
+      <p class="mt-4 text-gray-300">
+        My learning philosophy is centered on continuous growth, practical application, and ethical responsibility.
+        I believe engineering extends beyond theory into real-world implementation through collaboration, experimentation, and problem-solving.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="px-10 py-20">
+  <h2 class="text-3xl font-bold mb-6">Resume</h2>
+
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <div class="glass p-5 rounded-xl card">
+      <h3 class="text-cyan-400">Education</h3>
+      <p>B.Tech Civil Engineering</p>
+      <p>Pandit Deendayal Energy University (2023–2027)</p>
+    </div>
+
+    <div class="glass p-5 rounded-xl card">
+      <h3 class="text-cyan-400">Experience</h3>
+      <p>Civil Engineering Intern</p>
+      <p>Infrastructure Solutions Ltd. (Summer 2024)</p>
+      <p class="text-sm text-gray-300">Assisted in structural design and site execution</p>
+    </div>
+
+    <div class="glass p-5 rounded-xl card">
+      <h3 class="text-cyan-400">Skills</h3>
+      <p>AutoCAD, ETABS, STAAD Pro, BIM, GIS</p>
+    </div>
+
+    <div class="glass p-5 rounded-xl card">
+      <h3 class="text-cyan-400">Certifications</h3>
+      <p>AutoCAD Certified Professional</p>
+      <p>LEED Green Associate</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="px-10 py-20">
+  <h2 class="text-3xl font-bold mb-6">Projects</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="glass p-5 rounded-xl card">
+      <h3 class="text-cyan-400">Sustainable Bridge Design</h3>
+      <p class="text-sm mt-2">Eco-friendly medium span bridge design.</p>
+    </div>
+
+    <div class="glass p-5 rounded-xl card">
+      <h3 class="text-cyan-400">Geotechnical Investigation</h3>
+      <p class="text-sm mt-2">Soil testing and foundation analysis.</p>
+    </div>
+
+    <div class="glass p-5 rounded-xl card">
+      <h3 class="text-cyan-400">Rainwater Harvesting</h3>
+      <p class="text-sm mt-2">Campus water management system.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="px-10 py-20">
+  <h2 class="text-3xl font-bold mb-6">Skills</h2>
+
+  <div class="space-y-4">
+    <p>Structural Design</p>
+    <div class="w-full bg-gray-800 h-2 rounded">
+      <div class="bg-cyan-400 h-2 rounded w-[85%]"></div>
+    </div>
+
+    <p>AutoCAD</p>
+    <div class="w-full bg-gray-800 h-2 rounded">
+      <div class="bg-cyan-400 h-2 rounded w-[90%]"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-10 py-20">
+  <h2 class="text-3xl font-bold mb-6">Contact</h2>
+
+  <div class="glass p-6 rounded-xl">
+    <p>Email: example@email.com</p>
+    <p>Location: India</p>
+    <p class="mt-4 text-cyan-400">Let’s build something impactful together.</p>
+  </div>
+</section>
+
+<!-- ================= FULL PROMPT INCLUDED VERBATIM ================= -->
+<!-- DO NOT REMOVE THIS SECTION -->
+<textarea style="display:none;">
+<portfolio_prompt>
+Create a premium, modern, fully responsive portfolio website using React (Next.js) with Tailwind CSS and Framer Motion animations. The design should be dark-themed, minimal, smooth, and visually polished—similar to top-tier developer portfolios.
+GENERAL DESIGN REQUIREMENTS
+Dark minimalist theme (#0a0a0a background)
+Gradient accent colors (teal/cyan)
+Smooth scrolling with section-based navigation
+Sticky glassmorphism navbar (blur + transparency)
+Framer Motion animations (fade, slide, stagger)
+Hover effects on cards and buttons
+Fully responsive (mobile-first)
+Clean typography (Poppins or Inter)
+Section spacing should feel premium and breathable
+Use icons (Lucide / React Icons)
+WEBSITE STRUCTURE
+1. HERO SECTION (FULL SCREEN)
+Left side:
+Name: Pancham Mahendrakumar Asodiya
+Tagline: Aspiring Civil Engineer | Sustainable Design Enthusiast
+Short intro:
+A passionate Civil Engineering student focused on designing efficient, safe, and sustainable infrastructure systems. Combining analytical thinking, technical expertise, and practical exposure to solve real-world challenges.
+Buttons:
+View Projects (scroll)
+Contact Me
+Right side:
+Circular professional profile image
+Subtle floating animation
+2. ABOUT / LEARNING PHILOSOPHY
+Include structured content:
+Learning Philosophy:
+Continuous Learning
+Goal-Oriented Approach
+Innovation & Problem Solving
+Detailed paragraph:
+My learning philosophy is centered on continuous growth, practical application, and ethical responsibility. I believe engineering extends beyond theory into real-world implementation through collaboration, experimentation, and problem-solving.
+Learning Journey:
+Describe growth from academic foundation to practical engineering mindset.
+Add animation: fade-in + staggered bullet reveal.
+3. RESUME SECTION (CARD GRID)
+Create multiple cards:
+Education
+B.Tech Civil Engineering
+Pandit Deendayal Energy University (2023–2027)
+Work Experience
+Civil Engineering Intern
+Infrastructure Solutions Ltd. (Summer 2024)
+Assisted in structural design and site execution
+Collaborated with architects and contractors
+Improved material estimation accuracy by 15% using BIM
+Skills
+Technical: AutoCAD, ETABS, STAAD Pro, BIM, GIS, Structural Analysis
+Field: Surveying, Site Execution, Costing
+Soft: Leadership, Communication, Problem Solving, Teamwork
+Certifications
+AutoCAD Certified Professional
+LEED Green Associate
+GIS Certification
+Esri
+ETABS Professional Certification
+Computers and Structures Inc. · 2025
+Achievements
+Bridge Design Challenge Winner (2024)
+BIM Innovation Award (2026)
+Sustainable Infrastructure Design Recognition (2026)
+Hobbies
+Photography
+Chess
+Reading
+Hiking
+Music
+4. PROJECTS SECTION (INTERACTIVE + PREMIUM)
+Each project should be a glassmorphism card with:
+Title
+Short summary
+Expandable modal or dropdown
+Smooth animation on click
+Project 1: Sustainable Bridge Design
+Overview: Designed a medium-span bridge using eco-friendly materials.
+Objectives:
+Reduce material usage by 10%
+Improve durability
+Ensure safety
+Methodology:
+Structural analysis
+IRC design
+Material optimization
+Foundation design
+Outcomes:
+12% cost reduction
+Improved load distribution
+Tools: STAAD Pro, AutoCAD, Civil 3D
+Project 2: Geotechnical Investigation
+Overview: Soil testing and foundation design.
+Objectives:
+Determine bearing capacity
+Recommend foundation
+Methodology:
+SPT testing
+Lab analysis
+Outcomes:
+15% cost reduction
+Improved safety
+Tools: PLAXIS, GIS
+Project 3: Rainwater Harvesting
+Overview: Campus water management system.
+Objectives:
+Reduce water usage
+Improve recharge
+Methodology:
+Hydrological analysis
+Catchment study
+Outcomes:
+25% water saving
+5. SKILLS SECTION (ANIMATED BARS)
+Use animated progress bars:
+Structural Design → 85%
+BIM → 80%
+AutoCAD → 90%
+Construction Planning → 75%
+Bars should animate on scroll using Framer Motion.
+6. GLOBAL AWARENESS & ETHICS
+Create multiple cards:
+Ethical Framework:
+Safety & Public Welfare
+Inclusivity
+Sustainability
+Integrity
+Infrastructure Impact: Discuss safety vs cost, long-term durability, and community impact.
+Construction Ethics: Worker safety, compliance, execution responsibility.
+Leadership Ethics: Fairness, transparency, collaboration.
+Environmental Responsibility: Resource efficiency, sustainability.
+Global Perspective: Engineering must address climate change and global development challenges.
+7. FUTURE GOALS
+Card-based layout:
+Technical Expertise → Structural Engineering specialization
+Design Approach → Reliable and efficient systems
+Sustainability → Eco-friendly solutions
+Systems Thinking → Integrated infrastructure
+Analytical Growth → Data-driven engineering
+8. TESTIMONIALS
+Modern card carousel or grid:
+“Strong analytical and problem-solving abilities.”
+“Excellent leadership and teamwork skills.”
+“Highly motivated with clear engineering vision.”
+Add subtle hover animation.
+9. CONTACT SECTION
+Minimal clean layout:
+Email
+Location (India)
+Optional LinkedIn / GitHub icons
+Add CTA:
+“Let’s build something impactful together.”
+ADVANCED FEATURES
+Smooth scroll navigation
+Section reveal animations
+Project modal animations
+Sticky navbar with active link highlight
+Hover elevation effects
+Lazy-loaded images
+Clean component structure (Hero, About, Projects, etc.)
+TECH STACK
+Next.js (App Router)
+Tailwind CSS
+Framer Motion
+React Icons / Lucide Icons
+GOAL
+The final website should feel:
+Premium
+Interactive
+Smooth
+Professional
+Comparable to top developer portfolios
+</portfolio_prompt>
+</textarea>
+
+</body>
+</html>
